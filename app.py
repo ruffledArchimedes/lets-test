@@ -134,7 +134,7 @@ def fetch_tweets(username, limit=10):
     try:
         # Initialize Twitter client
         client = tweepy.Client(
-            bearer_token=os.getenv('whatup'),
+            bearer_token=os.getenv('whatuphello'),
             consumer_key=os.getenv('TWITTER_API_KEY'),
             consumer_secret=os.getenv('TWITTER_API_SECRET'),
             access_token=os.getenv('TWITTER_ACCESS_TOKEN'),
