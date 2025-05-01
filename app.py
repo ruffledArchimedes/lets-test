@@ -134,7 +134,7 @@ def fetch_tweets(username, limit=10):
     try:
         # Initialize Twitter client
         client = tweepy.Client(
-            bearer_token=os.getenv('backtobasicsbored'),
+            bearer_token=os.getenv('TWITTER_BEARER_TOKEN'),
             consumer_key=os.getenv('TWITTER_API_KEY'),
             consumer_secret=os.getenv('TWITTER_API_SECRET'),
             access_token=os.getenv('TWITTER_ACCESS_TOKEN'),
@@ -183,7 +183,7 @@ def fetch_tweets(username, limit=10):
 def main():
     st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon="📊")
     
-    st.title("📊 Twitter Sentiment Analysishaha")
+    st.title("📊 Twitter Sentiment Analysis")
     st.markdown("""
     This app analyzes the sentiment of tweets. You can:
     - Fetch and analyze tweets from any Twitter user
