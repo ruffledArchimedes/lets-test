@@ -183,7 +183,7 @@ def fetch_tweets(username, limit=10):
 def main():
     st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon="📊")
     
-    st.title("📊 Twitter Sentiment Analysis")
+    st.title("📊 Twitter Sentiment haha")
     st.markdown("""
     This app analyzes the sentiment of tweets. You can:
     - Fetch and analyze tweets from any Twitter user
