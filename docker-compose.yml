@@ -4,7 +4,7 @@ services:
   twitter-sentiment:
     image: unaware476/sentiment-analysis-app
     ports:
-      - "8580:8580"
+      - "8580:8502"
     deploy:
       replicas: 3
       update_config:
