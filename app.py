@@ -181,7 +181,7 @@ def fetch_tweets(username, limit=10):
         return None
 
 def main():
-    st.set_page_config(page_title="Twitter Sentiment haha", page_icon="📊")
+    st.set_page_config(page_title="Twitter Sentiment Analysis", page_icon="📊")
     
     st.title("📊 Twitter Sentiment Analysis")
     st.markdown("""
@@ -214,7 +214,7 @@ def main():
     
     # Twitter search section
     st.subheader("🔍 Fetch Tweets from Twitter")
-    username = st.text_input("Enter Twitter username (without @)")
+    username = st.text_input("Enter Twitter usernamee (without @)")
     tweet_limit = st.slider("Number of tweets to fetch", 1, 50, 10)
     
     if st.button("Fetch and Analyze Tweets"):
